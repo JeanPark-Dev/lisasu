@@ -1,2 +1,105 @@
-<h1 id="title">User Survey</h1>
-<p id="description">Let us know your most used device</p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "style-survey.css" />
+	</head>
+	<body id="main">
+		<h1 id="title">User Survey</h1>
+		<p id="description">Let us know your most used device</p>
+		<form id="survey-form">
+			<!-- name tab -->
+			<div class="rowTab">
+				<div class="labels">
+					<label id="name-label" for="name">* Name: </label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+				</div>
+			</div>
+			<!-- email tab -->
+			<div class="rowTab">
+				<div class="labels">
+					<label id="email-label" for="email">* Email: </label>
+				</div>
+				<div class="rightTab">
+					<input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+				</div>
+			</div>
+
+			<!-- age tab -->
+			<div class="rowTab">
+				<div class="labels">
+					<label id="number-label" for="age">* Age: </label>
+				</div>
+				<div class="rightTab">
+					<input type="number" name="age" id="number" min="1" max="150" class="input-field" placeholder="Age">
+				</div>
+			</div>
+
+			<!-- role tab -->
+			<div class="rowTab">
+				<div class="labels">
+					<label id="currentPos-label" for="currentPos" >Which option best describes your current role?</label>
+				</div>
+				<div class="rightTab">
+					<select id="dropdown" name="currentPos" class="dropdown">
+						<option disabled value>Select an option</option>
+						<option value="Student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="preferNo">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- type of device -->
+			<div class="rowTab">
+				<div class="labels">
+					<label id="typeOf">* What type of device do you use?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="radio"><label><input type="radio" value="1" name="type">Smart Phone</label></li>
+						<li class="radio"><label><input type="radio" value="2" name="type">Tablet</label></li>
+						<li class="radio"><label><input type="radio" value="3" name="type">Smart Watche</label></li>
+						<li class="radio"><label><input type="radio" value="4" name="type">other</label></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- device model -->
+			<div class="rowTab">
+				<div class="labels">
+					<label for="deviceModel">Which model do you use?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Apple Iphone</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Samsung Galaxy</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Samsung Note</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Huawei</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Google Pixel</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Nokia</label></li>
+						<li class="checkbox"><label><input type="checkbox" name="model" value="1" class="typeofDevice">Other</label></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<div class="labels">
+					<label for="comments">Any Comments</label>
+				</div>
+				<div class="rightTab">
+					<textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" placeholder="Enter your comment here..."></textarea>
+				</div>
+			</div>
+			<!-- submit button -->
+			<button id="submit" type="submit">Submit</button>
+
+		</form>
+	</body>
+</html>
+
+
+
